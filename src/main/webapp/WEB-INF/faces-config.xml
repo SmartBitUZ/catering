@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.1"
+              xmlns="http://java.sun.com/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd">
+    <application>
+        <view-handler>com.smartbit.catering.wrapper.CustomViewHandlerWrapper</view-handler>
+        <el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver>
+        <resource-bundle>
+            <base-name>messages</base-name>
+            <var>msg</var>
+        </resource-bundle>
+        <message-bundle>
+            messages
+        </message-bundle>
+        <!-- Locales -->
+        <locale-config>
+            <default-locale>ru</default-locale>
+            <supported-locale>ru</supported-locale>
+            <supported-locale>uz</supported-locale>
+        </locale-config>
+    </application>
+</faces-config>
