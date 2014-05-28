@@ -10,7 +10,7 @@
     <sec:http auto-config="false" use-expressions="true" entry-point-ref="authenticationEntryPoint">
         <sec:intercept-url pattern="/" access="permitAll"/>
         <sec:intercept-url pattern="/login" access="permitAll"/>
-        <sec:intercept-url pattern="/mobile/login" access="permitAll"/>
+        <sec:intercept-url pattern="/m/login" access="permitAll"/>
         <sec:intercept-url pattern="**" access="denyAll"/>
         <sec:form-login login-page="/login" default-target-url="/main"
                         authentication-failure-url="/login"

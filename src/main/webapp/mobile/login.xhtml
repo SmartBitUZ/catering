@@ -10,14 +10,27 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html">
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:pm="http://primefaces.org/mobile">
+<f:view renderKitId="PRIMEFACES_MOBILE">
+    <h:head>
+        <title>mobile</title>
+    </h:head>
 
-<h:head>
-    <title>mobile</title>
-</h:head>
+    <h:body>
+        <pm:page>
+            <pm:header title="Вход">
+                <p:commandButton styleClass="ui-btn-right ui-btn-inline" value="New" icon="ui-icon-plus"/>
+            </pm:header>
 
-<h:body>
-    mobile content here
-</h:body>
+            <pm:content>
+                <h:form prependId="false">
 
+                </h:form>
+            </pm:content>
+        </pm:page>
+    </h:body>
+</f:view>
 </html>

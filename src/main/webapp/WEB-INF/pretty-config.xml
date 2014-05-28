@@ -11,7 +11,7 @@
         <view-id value="/desktop/login.xhtml"/>
     </url-mapping>
     <url-mapping id="mobile/login">
-        <pattern value="/mobile/login"/>
+        <pattern value="/m/login"/>
         <view-id value="/mobile/login.xhtml"/>
     </url-mapping>
 </pretty-config>

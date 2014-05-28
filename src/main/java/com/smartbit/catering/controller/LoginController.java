@@ -20,7 +20,7 @@ public class LoginController {
         String renderKitId = FacesContext.getCurrentInstance().getViewRoot().getRenderKitId();
         if (renderKitId.equalsIgnoreCase("PRIMEFACES_MOBILE")) {
             try {
-                FacesContext.getCurrentInstance().getExternalContext().redirect(FacesContext.getCurrentInstance().getExternalContext().getApplicationContextPath()+ "/mobile/login");
+                FacesContext.getCurrentInstance().getExternalContext().redirect(FacesContext.getCurrentInstance().getExternalContext().getApplicationContextPath()+ "/m/login");
             } catch (IOException e) {
                 e.printStackTrace();
             }
