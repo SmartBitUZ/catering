@@ -5,13 +5,14 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import java.io.IOException;
+import java.io.Serializable;
 
 /**
  * Created by Andrey on 28.05.2014.
  */
 @ManagedBean
 @ViewScoped
-public class LoginController {
+public final class LoginController implements Serializable {
     public void init() {
     }
 
